@@ -11,9 +11,10 @@ Most notably the bitmaps and the pixel-based collision test. Thanks Filmote!
 
 
 Known bugs:
-  Can walk through low-flying Ptereodactyls
-  Obstacles::spawnObstacle doesn't respect spawn delays
-  The various gamestate constructors are not executed after new.
+-  Can walk through low-flying Ptereodactyls
+-  Obstacles::spawnObstacle doesn't respect spawn delays
+-  The various gamestate constructors are not executed after new.
+
 TODO: 	
- 	persistent storage of highscore
-	debug State ctor/dtor not executing
+- 	persistent storage of highscore
+-	debug State ctor/dtor not executing
