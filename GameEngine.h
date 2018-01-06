@@ -50,9 +50,10 @@ class GameEngine{
 		_currentState = nullptr;
 	}
 public:	
-	GameEngine(){		
-		arduboy.initRandomSeed(); //gets re-seeded at start of gameplay		
+	GameEngine(){};
+	inline void init() const { //delay initialization until arduboy setup is done
 		changeState(GameState::StartMenu);
+		arduboy.initRandomSeed(); //gets re-seeded at start of gameplay		
 	};
 	inline void input() const {
 		arduboy.pollButtons();
