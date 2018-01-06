@@ -51,7 +51,7 @@ class GameEngine{
 	}
 public:	
 	GameEngine(){};
-	inline void init() const { //delay initialization until arduboy setup is done
+	inline void init() { //delay initialization until arduboy setup is done
 		changeState(GameState::StartMenu);
 		arduboy.initRandomSeed(); //gets re-seeded at start of gameplay		
 	};
