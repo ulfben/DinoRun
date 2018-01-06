@@ -28,6 +28,7 @@ void setup(){
 	while(!Serial);
 	Serial.println("Tracing ON");
 #endif
+	_engine.changeState(GameState::StartMenu);
 };
 void loop(){
 	if(!arduboy.nextFrame()){ return; } //idles the CPU 1ms at a time
